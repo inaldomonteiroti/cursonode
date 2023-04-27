@@ -1,7 +1,4 @@
-﻿var express = require('express');
-var app = express(); //executando a funcao que o modulo do express retorna
-
-app.set('view engine', 'ejs')
+﻿var app = require('./config/server')
 
 app.get('/', function(req,res){
     res.render("home/index");
